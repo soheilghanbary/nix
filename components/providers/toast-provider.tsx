@@ -1,5 +1,5 @@
-'use client';
-import { Toaster } from 'sonner';
+"use client";
+import { Toaster } from "sonner";
 
 export const ToastProvider = () => {
   return (
@@ -7,14 +7,14 @@ export const ToastProvider = () => {
       position="bottom-center"
       toastOptions={{
         style: {
-          background: 'hsl(var(--background))',
-          color: 'hsl(var(--foreground))',
-          border: '1px solid hsl(var(--border))',
-          fontFamily: '--irsans',
+          background: "hsl(var(--background))",
+          color: "hsl(var(--foreground))",
+          border: "1px solid hsl(var(--border))",
+          // fontFamily: '--irsans',
         },
         classNames: {
-          toast: 'shadow',
-          icon: 'text-emerald-500',
+          toast: "shadow",
+          icon: "text-emerald-500",
         },
       }}
     />
