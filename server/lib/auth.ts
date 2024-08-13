@@ -2,21 +2,21 @@ import {
   type DefaultUser,
   type NextAuthOptions,
   getServerSession,
-} from "next-auth"
-import GithubProvider from "next-auth/providers/github"
-import GoogleProvider from "next-auth/providers/google"
+} from 'next-auth';
+import GithubProvider from 'next-auth/providers/github';
+import GoogleProvider from 'next-auth/providers/google';
 
-declare module "next-auth" {
+declare module 'next-auth' {
   interface Session {
     user?: DefaultUser & {
-      id: string
-    }
+      id: string;
+    };
   }
 }
 
-declare module "next-auth/jwt" {
+declare module 'next-auth/jwt' {
   interface JWT {
-    uid: string
+    uid: string;
   }
 }
 
@@ -69,31 +69,31 @@ export const authOptions: NextAuthOptions = {
     // },
     session: async ({ session, token }) => {
       if (session?.user) {
-        session.user.id = token.uid
+        session.user.id = token.uid;
       }
-      return session
+      return session;
     },
     jwt: async ({ token, user, trigger, session }) => {
       if (user) {
-        token.uid = user.id
+        token.uid = user.id;
       }
-      if (trigger === "update") {
-        return { ...token, ...session.user }
+      if (trigger === 'update') {
+        return { ...token, ...session.user };
       }
-      return { ...token, ...user }
+      return { ...token, ...user };
     },
   },
   secret: process.env.NEXTAUTH_SECRET,
   session: {
-    strategy: "jwt",
+    strategy: 'jwt',
   },
   pages: {
-    signIn: "/sign-in",
-    error: "/api/auth/error",
+    signIn: '/sign-in',
+    error: '/api/auth/error',
   },
-}
+};
 
 export const getUserSession = async () => {
-  const session = await getServerSession(authOptions)
-  return session?.user || null
-}
+  const session = await getServerSession(authOptions);
+  return session?.user || null;
+};
