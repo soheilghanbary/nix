@@ -2,7 +2,6 @@ import "@/assets/app.css";
 import { QueryProvider } from "@/components/providers/query-provider";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { ToastProvider } from "@/components/providers/toast-provider";
-import { siteConfig } from "@/config/site";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import type { PropsWithChildren } from "react";
@@ -15,10 +14,10 @@ const font = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: siteConfig.name,
-    template: `%s - ${siteConfig.name}`,
+    default: "Nix",
+    template: "%s - nix",
   },
-  description: siteConfig.description,
+  description: "The minimal full stack starter",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon-16x16.png",
