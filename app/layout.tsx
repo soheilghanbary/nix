@@ -41,7 +41,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
             enableColorScheme
             defaultTheme="light"
           >
-            <main className="container">{children}</main>
+            {children}
             <ToastProvider />
           </ThemeProvider>
         </QueryProvider>
