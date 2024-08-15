@@ -1,27 +1,27 @@
-import "@/assets/app.css";
-import { QueryProvider } from "@/components/providers/query-provider";
-import { ThemeProvider } from "@/components/providers/theme-provider";
-import { ToastProvider } from "@/components/providers/toast-provider";
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import type { PropsWithChildren } from "react";
+import '@/assets/app.css';
+import { QueryProvider } from '@/components/providers/query-provider';
+import { ThemeProvider } from '@/components/providers/theme-provider';
+import { ToastProvider } from '@/components/providers/toast-provider';
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import type { PropsWithChildren } from 'react';
 
 const font = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  weight: ["400", "500", "600", "700", "800", "900"],
+  subsets: ['latin'],
+  variable: '--font-inter',
+  weight: ['400', '500', '600', '700', '800', '900'],
 });
 
 export const metadata: Metadata = {
   title: {
-    default: "Nix",
-    template: "%s - nix",
+    default: 'Nix',
+    template: '%s - nix',
   },
-  description: "The minimal full stack starter",
+  description: 'The minimal full stack starter',
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-16x16.png",
-    apple: "/apple-touch-icon.png",
+    icon: '/favicon.ico',
+    shortcut: '/favicon-16x16.png',
+    apple: '/apple-touch-icon.png',
   },
 };
 

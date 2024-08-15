@@ -1,7 +1,7 @@
-"use client";
-import { ModeToggle } from "@/components/mode-toggle";
-import { api } from "@/lib/api";
-import { useEffect, useState } from "react";
+'use client';
+import { ModeToggle } from '@/components/mode-toggle';
+import { api } from '@/lib/api';
+import { useEffect, useState } from 'react';
 
 const sayHello = async () => {
   const response = await api.hello.$get();
