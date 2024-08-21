@@ -8,8 +8,10 @@ const sayHello = async () => {
   return response.json();
 };
 
+type HelloResponse = Awaited<ReturnType<typeof sayHello>>
+
 export default () => {
-  const [data, setData] = useState<any>();
+  const [data, setData] = useState<HelloResponse>();
 
   useEffect(() => {
     sayHello().then(setData);
