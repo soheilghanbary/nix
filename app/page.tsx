@@ -1,6 +1,8 @@
 'use client';
 import { ModeToggle } from '@/components/mode-toggle';
+import { Button } from '@/components/ui/button';
 import { api } from '@/lib/api';
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 const sayHello = async () => {
@@ -8,7 +10,7 @@ const sayHello = async () => {
   return response.json();
 };
 
-type HelloResponse = Awaited<ReturnType<typeof sayHello>>
+type HelloResponse = Awaited<ReturnType<typeof sayHello>>;
 
 export default () => {
   const [data, setData] = useState<HelloResponse>();
@@ -19,11 +21,17 @@ export default () => {
 
   return (
     <section className="flex h-dvh w-dvw flex-col items-center justify-center gap-4 p-4 text-center">
-      <h1 className="text-center font-extrabold text-2xl text-foreground">
-        Nix Already to 🔥
+      <h1 className="bg-gradient-to-r from-gray-700 to-gray-900 bg-clip-text font-black text-3xl text-transparent lg:text-5xl dark:from-gray-300 dark:to-gray-500">
+        Welcome to Nix Stack
       </h1>
-      {data ? <pre>{JSON.stringify(data)}</pre> : <p>Loading Data ...</p>}
+      <p>The Modern Next.js Stack</p>
+      <Button asChild className="rounded-full">
+        <Link target="_blank" href={'https://github.com/soheilghanbary/nix'}>
+          Get Started 🚀
+        </Link>
+      </Button>
       <ModeToggle />
+      {data ? <pre>{JSON.stringify(data)}</pre> : <p>Loading Data ...</p>}
     </section>
   );
 };
