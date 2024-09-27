@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@radix-ui/react-slot':
         specifier: ^1.1.0
-        version: 1.1.0(@types/react@18.3.9)(react@18.3.1)
+        version: 1.1.0(@types/react@18.3.10)(react@18.3.1)
       '@tanstack/react-query':
         specifier: ^5.56.2
         version: 5.56.2(react@18.3.1)
@@ -22,19 +22,19 @@ importers:
         version: 2.1.1
       drizzle-orm:
         specifier: ^0.33.0
-        version: 0.33.0(@prisma/client@5.20.0(prisma@5.20.0))(@types/react@18.3.9)(postgres@3.4.4)(prisma@5.20.0)(react@18.3.1)
+        version: 0.33.0(@prisma/client@5.20.0(prisma@5.20.0))(@types/react@18.3.10)(postgres@3.4.4)(prisma@5.20.0)(react@18.3.1)
       hono:
         specifier: ^4.6.3
         version: 4.6.3
       lucide-react:
-        specifier: ^0.445.0
-        version: 0.445.0(react@18.3.1)
+        specifier: ^0.446.0
+        version: 0.446.0(react@18.3.1)
       next:
         specifier: 14.2.13
         version: 14.2.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       next-auth:
-        specifier: ^4.24.7
-        version: 4.24.7(next@14.2.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^4.24.8
+        version: 4.24.8(next@14.2.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       next-themes:
         specifier: ^0.3.0
         version: 0.3.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -61,14 +61,14 @@ importers:
         specifier: ^1.9.2
         version: 1.9.2
       '@tanstack/react-query-devtools':
-        specifier: ^5.56.2
-        version: 5.56.2(@tanstack/react-query@5.56.2(react@18.3.1))(react@18.3.1)
+        specifier: ^5.58.0
+        version: 5.58.0(@tanstack/react-query@5.56.2(react@18.3.1))(react@18.3.1)
       '@types/node':
-        specifier: ^22.6.1
-        version: 22.6.1
+        specifier: ^22.7.4
+        version: 22.7.4
       '@types/react':
-        specifier: ^18.3.9
-        version: 18.3.9
+        specifier: ^18.3.10
+        version: 18.3.10
       '@types/react-dom':
         specifier: ^18
         version: 18.3.0
@@ -91,8 +91,8 @@ packages:
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
     engines: {node: '>=10'}
 
-  '@babel/runtime@7.25.0':
-    resolution: {integrity: sha512-7dRy4DwXwtzBrPbZflqxnvfxLF8kdZXPkhymtDeFoFqE6ldzjQFgYTtYIFARcLEYDrqfBfYcZt1WqFxRoyC9Rw==}
+  '@babel/runtime@7.25.6':
+    resolution: {integrity: sha512-VBj9MYyDb9tuLq7yzqjgzt6Q+IBQLrGZfdjOekyEirZPHxXWoTSGUTMrpsfi58Up73d13NfYLv8HT9vmznjzhQ==}
     engines: {node: '>=6.9.0'}
 
   '@biomejs/biome@1.9.2':
@@ -576,11 +576,11 @@ packages:
   '@tanstack/query-core@5.56.2':
     resolution: {integrity: sha512-gor0RI3/R5rVV3gXfddh1MM+hgl0Z4G7tj6Xxpq6p2I03NGPaJ8dITY9Gz05zYYb/EJq9vPas/T4wn9EaDPd4Q==}
 
-  '@tanstack/query-devtools@5.56.1':
-    resolution: {integrity: sha512-xnp9jq/9dHfSCDmmf+A5DjbIjYqbnnUL2ToqlaaviUQGRTapXQ8J+GxusYUu1IG0vZMaWdiVUA4HRGGZYAUU+A==}
+  '@tanstack/query-devtools@5.58.0':
+    resolution: {integrity: sha512-iFdQEFXaYYxqgrv63ots+65FGI+tNp5ZS5PdMU1DWisxk3fez5HG3FyVlbUva+RdYS5hSLbxZ9aw3yEs97GNTw==}
 
-  '@tanstack/react-query-devtools@5.56.2':
-    resolution: {integrity: sha512-7nINJtRZZVwhTTyDdMIcSaXo+EHMLYJu1S2e6FskvvD5prx87LlAXXWZDfU24Qm4HjshEtM5lS3HIOszNGblcw==}
+  '@tanstack/react-query-devtools@5.58.0':
+    resolution: {integrity: sha512-qF0xCyBeVuNLygTO1sAl1X4Gv52w52SeaDdbjYQmtTOooUJ3aAVlBEtiRJFfJblWQ9p/UQG8NIcC/65RjX8Jkw==}
     peerDependencies:
       '@tanstack/react-query': ^5.56.2
       react: ^18 || ^19
@@ -590,8 +590,8 @@ packages:
     peerDependencies:
       react: ^18 || ^19
 
-  '@types/node@22.6.1':
-    resolution: {integrity: sha512-V48tCfcKb/e6cVUigLAaJDAILdMP0fUW6BidkPK4GpGjXcfbnoHasCZDwz3N3yVt5we2RHm4XTQCpv0KJz9zqw==}
+  '@types/node@22.7.4':
+    resolution: {integrity: sha512-y+NPi1rFzDs1NdQHHToqeiX2TIS79SWEAw9GYhkkx8bD0ChpfqC+n2j5OXOCpzfojBEBt6DnEnnG9MY0zk1XLg==}
 
   '@types/prop-types@15.7.13':
     resolution: {integrity: sha512-hCZTSvwbzWGvhqxp/RqVqwU999pBf2vp7hzIjiYOsl8wqOmUxkQ6ddw1cV3l8811+kdUFus/q4d1Y3E3SyEifA==}
@@ -599,8 +599,8 @@ packages:
   '@types/react-dom@18.3.0':
     resolution: {integrity: sha512-EhwApuTmMBmXuFOikhQLIBUn6uFg81SwLMOAUgodJF14SOBOCMdU04gDoYi0WOJJHD144TL32z4yDqCW3dnkQg==}
 
-  '@types/react@18.3.9':
-    resolution: {integrity: sha512-+BpAVyTpJkNWWSSnaLBk6ePpHLOGJKnEQNbINNovPWzvEUyAe3e+/d494QdEh71RekM/qV7lw6jzf1HGrJyAtQ==}
+  '@types/react@18.3.10':
+    resolution: {integrity: sha512-02sAAlBnP39JgXwkAq3PeU9DVaaGpZyF3MGcC0MKgQVkZor5IiiDAipVaxQHtDJAmO4GIy/rVBy/LzVj76Cyqg==}
 
   ansi-regex@5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
@@ -944,8 +944,8 @@ packages:
     resolution: {integrity: sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==}
     engines: {node: '>=10'}
 
-  lucide-react@0.445.0:
-    resolution: {integrity: sha512-YrLf3aAHvmd4dZ8ot+mMdNFrFpJD7YRwQ2pUcBhgqbmxtrMP4xDzIorcj+8y+6kpuXBF4JB0NOCTUWIYetJjgA==}
+  lucide-react@0.446.0:
+    resolution: {integrity: sha512-BU7gy8MfBMqvEdDPH79VhOXSEgyG8TSPOKWaExWGCQVqnGH7wGgDngPbofu+KdtVjPQBWbEmnfMTq90CTiiDRg==}
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0-rc
 
@@ -976,14 +976,17 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
-  next-auth@4.24.7:
-    resolution: {integrity: sha512-iChjE8ov/1K/z98gdKbn2Jw+2vLgJtVV39X+rCP5SGnVQuco7QOr19FRNGMIrD8d3LYhHWV9j9sKLzq1aDWWQQ==}
+  next-auth@4.24.8:
+    resolution: {integrity: sha512-SLt3+8UCtklsotnz2p+nB4aN3IHNmpsQFAZ24VLxGotWGzSxkBh192zxNhm/J5wgkcrDWVp0bwqvW0HksK/Lcw==}
     peerDependencies:
+      '@auth/core': 0.34.2
       next: ^12.2.5 || ^13 || ^14
       nodemailer: ^6.6.5
       react: ^17.0.2 || ^18
       react-dom: ^17.0.2 || ^18
     peerDependenciesMeta:
+      '@auth/core':
+        optional: true
       nodemailer:
         optional: true
 
@@ -1034,8 +1037,8 @@ packages:
     resolution: {integrity: sha512-IF4PcGgzAr6XXSff26Sk/+P4KZFJVuHAJZj3wgO3vX2bMdNVp/QXTP3P7CEm9V1IdG8lDLY3HhiqpsE/nOwpPw==}
     engines: {node: ^10.13.0 || >=12.0.0}
 
-  openid-client@5.6.5:
-    resolution: {integrity: sha512-5P4qO9nGJzB5PI0LFlhj4Dzg3m4odt0qsJTfyEtZyOlkgpILwEioOhVVJOrS1iVH494S4Ee5OCjjg6Bf5WOj3w==}
+  openid-client@5.7.0:
+    resolution: {integrity: sha512-4GCCGZt1i2kTHpwvaC/sCpTpQqDnBzDzuJcJMbH+y1Q5qI8U8RBvoSh28svarXszZHR5BAMXbJPX1PGPRE3VOA==}
 
   package-json-from-dist@1.0.0:
     resolution: {integrity: sha512-dATvCeZN/8wQsGywez1mzHtTlP22H8OEfPrVMLNr4/eGa+ijtLn/6M5f0dY8UKNrC2O9UCU6SSoG3qRKnt7STw==}
@@ -1120,8 +1123,8 @@ packages:
     peerDependencies:
       preact: '>=10'
 
-  preact@10.23.1:
-    resolution: {integrity: sha512-O5UdRsNh4vdZaTieWe3XOgSpdMAmkIYBCT3VhQDlKrzyCm8lUYsk0fmVEvoQQifoOjFRTaHZO69ylrzTW2BH+A==}
+  preact@10.24.1:
+    resolution: {integrity: sha512-PnBAwFI3Yjxxcxw75n6VId/5TFxNW/81zexzWD9jn1+eSrOP84NdsS38H5IkF/UH3frqRPT+MvuCoVHjTDTnDw==}
 
   pretty-format@3.8.0:
     resolution: {integrity: sha512-WuxUnVtlWL1OfZFQFuqvnvs6MiAGk9UNsBostyBOB0Is9wb5uRESevA6rnl/rkksXaGX3GzZhPup5d6Vp1nFew==}
@@ -1311,7 +1314,7 @@ snapshots:
 
   '@alloc/quick-lru@5.2.0': {}
 
-  '@babel/runtime@7.25.0':
+  '@babel/runtime@7.25.6':
     dependencies:
       regenerator-runtime: 0.14.1
 
@@ -1600,18 +1603,18 @@ snapshots:
       '@prisma/debug': 5.20.0
     optional: true
 
-  '@radix-ui/react-compose-refs@1.1.0(@types/react@18.3.9)(react@18.3.1)':
+  '@radix-ui/react-compose-refs@1.1.0(@types/react@18.3.10)(react@18.3.1)':
     dependencies:
       react: 18.3.1
     optionalDependencies:
-      '@types/react': 18.3.9
+      '@types/react': 18.3.10
 
-  '@radix-ui/react-slot@1.1.0(@types/react@18.3.9)(react@18.3.1)':
+  '@radix-ui/react-slot@1.1.0(@types/react@18.3.10)(react@18.3.1)':
     dependencies:
-      '@radix-ui/react-compose-refs': 1.1.0(@types/react@18.3.9)(react@18.3.1)
+      '@radix-ui/react-compose-refs': 1.1.0(@types/react@18.3.10)(react@18.3.1)
       react: 18.3.1
     optionalDependencies:
-      '@types/react': 18.3.9
+      '@types/react': 18.3.10
 
   '@swc/counter@0.1.3': {}
 
@@ -1622,11 +1625,11 @@ snapshots:
 
   '@tanstack/query-core@5.56.2': {}
 
-  '@tanstack/query-devtools@5.56.1': {}
+  '@tanstack/query-devtools@5.58.0': {}
 
-  '@tanstack/react-query-devtools@5.56.2(@tanstack/react-query@5.56.2(react@18.3.1))(react@18.3.1)':
+  '@tanstack/react-query-devtools@5.58.0(@tanstack/react-query@5.56.2(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@tanstack/query-devtools': 5.56.1
+      '@tanstack/query-devtools': 5.58.0
       '@tanstack/react-query': 5.56.2(react@18.3.1)
       react: 18.3.1
 
@@ -1635,7 +1638,7 @@ snapshots:
       '@tanstack/query-core': 5.56.2
       react: 18.3.1
 
-  '@types/node@22.6.1':
+  '@types/node@22.7.4':
     dependencies:
       undici-types: 6.19.8
 
@@ -1643,9 +1646,9 @@ snapshots:
 
   '@types/react-dom@18.3.0':
     dependencies:
-      '@types/react': 18.3.9
+      '@types/react': 18.3.10
 
-  '@types/react@18.3.9':
+  '@types/react@18.3.10':
     dependencies:
       '@types/prop-types': 15.7.13
       csstype: 3.1.3
@@ -1750,10 +1753,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  drizzle-orm@0.33.0(@prisma/client@5.20.0(prisma@5.20.0))(@types/react@18.3.9)(postgres@3.4.4)(prisma@5.20.0)(react@18.3.1):
+  drizzle-orm@0.33.0(@prisma/client@5.20.0(prisma@5.20.0))(@types/react@18.3.10)(postgres@3.4.4)(prisma@5.20.0)(react@18.3.1):
     optionalDependencies:
       '@prisma/client': 5.20.0(prisma@5.20.0)
-      '@types/react': 18.3.9
+      '@types/react': 18.3.10
       postgres: 3.4.4
       prisma: 5.20.0
       react: 18.3.1
@@ -1925,7 +1928,7 @@ snapshots:
     dependencies:
       yallist: 4.0.0
 
-  lucide-react@0.445.0(react@18.3.1):
+  lucide-react@0.446.0(react@18.3.1):
     dependencies:
       react: 18.3.1
 
@@ -1952,17 +1955,17 @@ snapshots:
 
   nanoid@3.3.7: {}
 
-  next-auth@4.24.7(next@14.2.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  next-auth@4.24.8(next@14.2.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.25.6
       '@panva/hkdf': 1.2.1
       cookie: 0.5.0
       jose: 4.15.9
       next: 14.2.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       oauth: 0.9.15
-      openid-client: 5.6.5
-      preact: 10.23.1
-      preact-render-to-string: 5.2.6(preact@10.23.1)
+      openid-client: 5.7.0
+      preact: 10.24.1
+      preact-render-to-string: 5.2.6(preact@10.24.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       uuid: 8.3.2
@@ -2009,7 +2012,7 @@ snapshots:
 
   oidc-token-hash@5.0.3: {}
 
-  openid-client@5.6.5:
+  openid-client@5.7.0:
     dependencies:
       jose: 4.15.9
       lru-cache: 6.0.0
@@ -2080,12 +2083,12 @@ snapshots:
 
   postgres@3.4.4: {}
 
-  preact-render-to-string@5.2.6(preact@10.23.1):
+  preact-render-to-string@5.2.6(preact@10.24.1):
     dependencies:
-      preact: 10.23.1
+      preact: 10.24.1
       pretty-format: 3.8.0
 
-  preact@10.23.1: {}
+  preact@10.24.1: {}
 
   pretty-format@3.8.0: {}
 
