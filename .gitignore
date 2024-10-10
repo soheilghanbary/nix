@@ -27,7 +27,7 @@ yarn-error.log*
 .env
 
 # lockb
-bun.lockb
+/bun.lockb
 
 # vercel
 .vercel
