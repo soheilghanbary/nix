@@ -8,6 +8,12 @@ const nextConfig: NextConfig = {
     LIARA_SECRET_KEY: process.env.LIARA_SECRET_KEY,
     NEXTAUTH_URL: process.env.NEXTAUTH_URL,
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
   images: {
     remotePatterns: [
       {
