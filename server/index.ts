@@ -16,7 +16,7 @@ app.use(
 // routes
 const apiRoutes = app.basePath('/api').get('/hello', (c) => {
   return c.json({
-    message: 'Hello Nix.JS!',
+    message: 'Hello from Hono 🔥',
   });
 });
 
