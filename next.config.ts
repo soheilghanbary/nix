@@ -1,5 +1,6 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+import type { NextConfig } from 'next';
+
+const nextConfig: NextConfig = {
   env: {
     LIARA_ENDPOINT: process.env.LIARA_ENDPOINT,
     LIARA_BUCKET_NAME: process.env.LIARA_BUCKET_NAME,
@@ -11,15 +12,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'webkade.storage.iran.liara.space',
-      },
-      {
-        protocol: 'https',
         hostname: 'avatars.githubusercontent.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'github.com',
       },
       {
         protocol: 'https',
