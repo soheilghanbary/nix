@@ -6,11 +6,11 @@ import GoogleProvider from 'next-auth/providers/google';
 declare module 'next-auth' {
   interface Session {
     id: string;
-    accessToken?: string;
   }
 }
 
 export const authOptions: NextAuthConfig = {
+  trustHost: true,
   session: { strategy: 'jwt' },
   experimental: { enableWebAuthn: true },
   providers: [GithubProvider, GoogleProvider],

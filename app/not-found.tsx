@@ -1,4 +1,5 @@
 'use client';
+import { Button } from '@/components/ui/button';
 import { useRouter } from 'next/navigation';
 
 export default function NotFoundPage() {
@@ -6,16 +7,10 @@ export default function NotFoundPage() {
   return (
     <div>
       <div className="my-32 space-y-4 text-center">
-        <h1 className="text-center font-extrabold text-4xl">
-          404. Page Not Found 😣
-        </h1>
-        <button
-          type="button"
-          className="rounded-md bg-blue-600 px-4 py-2 font-medium shadow-sm"
-          onClick={() => router.back()}
-        >
+        <h1 className="text-center font-black text-2xl">Page Not Found!</h1>
+        <Button variant={'outline'} onClick={() => router.back()}>
           Back
-        </button>
+        </Button>
       </div>
     </div>
   );
