@@ -6,7 +6,6 @@ const nextConfig: NextConfig = {
     LIARA_BUCKET_NAME: process.env.LIARA_BUCKET_NAME,
     LIARA_ACCESS_KEY: process.env.LIARA_ACCESS_KEY,
     LIARA_SECRET_KEY: process.env.LIARA_SECRET_KEY,
-    NEXTAUTH_URL: process.env.NEXTAUTH_URL,
   },
   eslint: {
     ignoreDuringBuilds: true,
