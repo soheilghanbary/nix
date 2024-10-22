@@ -23,8 +23,8 @@
     "next-auth": "^5.0.0-beta.25",
     "next-themes": "^0.3.0",
     "postgres": "^3.4.4",
-    "react": "^19.0.0-rc-fb9a90fa48-20240614",
-    "react-dom": "^19.0.0-rc-fb9a90fa48-20240614",
+    "react": "rc",
+    "react-dom": "rc",
     "sonner": "^1.5.0",
     "tailwind-merge": "^2.5.4",
     "tailwindcss-animate": "^1.0.7"
