@@ -1,5 +1,5 @@
 'use client';
-import { ModeToggle } from '@/components/mode-toggle';
+import { ModeToggle } from '@/components/common/mode-toggle';
 import { Button } from '@/components/ui/button';
 import { siteConfig } from '@/config/site';
 import { api } from '@/lib/api';
