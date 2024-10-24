@@ -22,6 +22,7 @@
     "next": "^15.0.1",
     "next-auth": "^5.0.0-beta.25",
     "next-themes": "^0.3.0",
+    "nuqs": "^2.0.4",
     "postgres": "^3.4.4",
     "react": "rc",
     "react-dom": "rc",
