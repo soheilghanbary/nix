@@ -4,6 +4,10 @@ import { siteConfig } from '@/config/site';
 import Link from 'next/link';
 import { Suspense } from 'react';
 
+const MessageSkeleton = () => (
+  <div className="h-6 w-48 animate-pulse rounded-full bg-muted" />
+);
+
 const getHello = async () => {
   const res = await fetch('http://localhost:3000/api/hello', {
     cache: 'no-store',
@@ -15,10 +19,6 @@ const Message = async () => {
   const data = await getHello();
   return <p>{data.message}</p>;
 };
-
-const Skeleton = () => (
-  <div className="h-6 w-48 animate-pulse rounded-full bg-muted" />
-);
 
 export default () => {
   return (
@@ -33,7 +33,7 @@ export default () => {
         </Link>
       </Button>
       <ModeToggle />
-      <Suspense fallback={<Skeleton />}>
+      <Suspense fallback={<MessageSkeleton />}>
         <Message />
       </Suspense>
     </section>
