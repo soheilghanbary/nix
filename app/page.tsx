@@ -1,25 +1,22 @@
-'use client';
 import { ModeToggle } from '@/components/common/mode-toggle';
 import { Button } from '@/components/ui/button';
 import { siteConfig } from '@/config/site';
-import { api } from '@/lib/api';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { Suspense } from 'react';
 
-const sayHello = async () => {
-  const response = await api.hello.$get();
-  return response.json();
+const getHello = async () => {
+  const res = await fetch('http://localhost:3000/api/hello', {
+    cache: 'no-store',
+  });
+  return await res.json();
 };
 
-type HelloResponse = Awaited<ReturnType<typeof sayHello>>;
+const Message = async () => {
+  const data = await getHello();
+  return <p>{data.message}</p>;
+};
 
 export default () => {
-  const [data, setData] = useState<HelloResponse>();
-
-  useEffect(() => {
-    sayHello().then(setData);
-  }, []);
-
   return (
     <section className="flex h-dvh w-dvw flex-col items-center justify-center gap-4 p-4 text-center">
       <h1 className="bg-gradient-to-r from-gray-700 to-gray-900 bg-clip-text font-black text-3xl text-transparent lg:text-5xl dark:from-gray-300 dark:to-gray-500">
@@ -32,7 +29,9 @@ export default () => {
         </Link>
       </Button>
       <ModeToggle />
-      {data ? <pre>{JSON.stringify(data)}</pre> : <p>Loading Data ...</p>}
+      <Suspense fallback={<p>loading ...</p>}>
+        <Message />
+      </Suspense>
     </section>
   );
 };
