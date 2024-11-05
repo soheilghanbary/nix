@@ -16,6 +16,10 @@ const Message = async () => {
   return <p>{data.message}</p>;
 };
 
+const Skeleton = () => (
+  <div className="h-6 w-48 animate-pulse rounded-full bg-muted" />
+);
+
 export default () => {
   return (
     <section className="flex h-dvh w-dvw flex-col items-center justify-center gap-4 p-4 text-center">
@@ -29,7 +33,7 @@ export default () => {
         </Link>
       </Button>
       <ModeToggle />
-      <Suspense fallback={<p>loading ...</p>}>
+      <Suspense fallback={<Skeleton />}>
         <Message />
       </Suspense>
     </section>
