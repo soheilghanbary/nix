@@ -3,9 +3,10 @@
   "style": "new-york",
   "rsc": true,
   "tsx": true,
+  "iconLibrary": "lucide-react",
   "tailwind": {
     "config": "tailwind.config.ts",
-    "css": "assets/app.css",
+    "css": "src/assets/app.css",
     "baseColor": "zinc",
     "cssVariables": true,
     "prefix": ""
