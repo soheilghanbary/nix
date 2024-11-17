@@ -10,7 +10,7 @@ const MessageSkeleton = () => (
 
 const getHello = async () => {
   const res = await fetch('http://localhost:3000/api/hello', {
-    cache: 'no-store',
+    cache: 'force-cache',
   });
   return await res.json();
 };
